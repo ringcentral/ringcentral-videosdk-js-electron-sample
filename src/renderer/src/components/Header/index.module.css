@@ -1,0 +1,33 @@
+.header {
+  padding: 12px 0;
+  padding-left: 88px;
+  line-height: 1;
+  display: flex;
+  margin-left: 0;
+}
+
+.floatHeader {
+  margin-left: -80px;
+}
+
+.menuItem {
+  padding: 4px 8px;
+  border-radius: 6px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #a3a1a1;
+}
+
+.menuItem .menuItemIcon {
+  margin-right: 5px;
+}
+
+.menuItemActive {
+  color: #1e7795;
+}
+
+.menuItem:hover {
+  color: #1e7795;
+}

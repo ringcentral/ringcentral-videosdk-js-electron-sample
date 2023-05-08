@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Open Sans', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+code {
+  font-weight: 600;
+  padding: 3px 5px;
+  border-radius: 2px;
+  background-color: #26282e;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-size: 85%;
+}
+
+a {
+  color: #9feaf9;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+.suspension-container {
+  height: 100vh;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+.bg-transparent {
+  background: #ffffff6e;
+}
+
+
+#root .header {
+  height: 56px;
+  line-height: 56px;
+  padding: 0 20px;
+}
+#root .start-container {
+  padding: 16px;
+}
+#root .meeting-container {
+  position: relative;
+  height: calc(100% - 56px);
+}
+#root .meeting-container .RCV-ui-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loader {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #1e7795;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-left: 5px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+.start-view {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.start-view .meeting-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-view .meeting-button-group .meeting-button-wrapper {
+  text-align: center;
+  font-size: 14px;
+  color: #2f2f2f;
+}
+.start-view .meeting-button-group .meeting-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 10px 20px;
+  border: 1px solid #1e7795;
+  cursor: pointer;
+}
+.start-view .meeting-button-group .meeting-button:hover {
+  background: #f9f9f9;
+}
+
