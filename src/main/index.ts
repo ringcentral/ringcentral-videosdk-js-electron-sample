@@ -10,12 +10,12 @@ function createSuspensionWindow(): void {
     height: 700,
     show: true,
     // type: 'panel',
-    frame: false, //要创建无边框窗口
+    frame: false,
     titleBarStyle: 'hidden',
     trafficLightPosition: { x: 20, y: 20 },
-    resizable: true, //禁止窗口大小缩放
+    resizable: true,
     autoHideMenuBar: true,
-    transparent: true, //设置透明
+    transparent: true,
     alwaysOnTop: true,
     fullscreenable: true,
     acceptFirstMouse: true,
