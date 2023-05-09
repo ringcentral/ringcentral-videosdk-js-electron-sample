@@ -19,13 +19,17 @@ function createSuspensionWindow(): void {
     alwaysOnTop: true,
     fullscreenable: true,
     acceptFirstMouse: true,
-    ...(process.platform === 'linux' ? { icon } : {}),
+    icon,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
       contextIsolation: false
     }
   })
+
+  if (process.platform === 'darwin') {
+    app.dock.setIcon(icon)
+  }
 
   win.webContents.setWindowOpenHandler((details) => {
     shell.openExternal(details.url)
